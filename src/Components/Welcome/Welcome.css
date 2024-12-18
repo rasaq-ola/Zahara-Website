@@ -1,0 +1,213 @@
+body {
+    font-family: Uber Move Text;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+  }
+  
+  .welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 1440px;
+    height: 691px;
+    margin: 0px auto;
+    background-color: white;
+    padding: 0px 70px;
+    
+  }
+  
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1300px;
+    height: 511px;
+    margin-bottom: 5px; /* Spacing between content and logo section */
+    gap: 40px;
+  }
+  
+  .text-content {
+    flex: 1; /* Takes up equal space */
+    margin-right: 20px;
+    text-align: left; /* Align text to the left */
+    margin-bottom: 60px;
+  }
+  
+  .text-content h1 {
+    font-size: 16px;
+    margin-bottom: 1rem;
+    padding-left: 26px;
+    color: #339496;
+  }
+  
+  .text-content h2 {
+    font-size: 61px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    line-height: 66px;
+    color: #2E2E2E;
+    margin-top: 10px;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 25px;
+    font-weight: 400;
+  }
+  
+  .cta-container {
+    display: flex;
+    align-items: center;
+    gap: 24px; /* Space between the button and the text */
+    margin-top: 1rem;
+    width: 490px;
+    height: 50px;
+  }
+  
+  .cta-button {
+    padding: 10px 30px;
+    font-size: 1rem;
+    color: white;
+    background-color: #339496;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 189px;
+    height: 47px;
+    gap: 10px;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cta-text {
+    font-size: 16px;
+    line-height: 25px;
+    color: #2E2E2E;
+    font-weight: 400;
+  }
+  
+  .image-content {
+    flex: 1; /* Takes up equal space */
+    position: relative; /* To allow the image to fill the container */
+    width: 644px;
+    height: 451px;
+    object-fit: cover;
+  }
+  
+  .image-content img {
+    gap: 10px;
+    border-radius: 8px;
+    width: 95%;
+    height: 100%;
+    
+  }
+  
+  /* Logo Section */
+  .logo-section {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .logo-section h2 {
+    font-size: 25px;
+    margin-bottom: 1rem;
+    color: #287475;
+    font-weight: 500;
+    line-height: 16px;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 44px; /* Space between logos */
+    margin-top: 50px;
+  }
+
+  .logo-container img:nth-child(1) {
+    width: 70px; /* Resize the first image */
+    height: 31.25px; /* Maintain aspect ratio */
+  }
+  
+  .logo-container img:nth-child(2) {
+    width: 70px; /* Resize the second image */
+    height: 21.25px;
+  }
+  
+  .logo-container img:nth-child(3) {
+    width: 70px; /* Resize the third image */
+    height: 44px;
+  }
+  
+  .logo-container img:nth-child(4) {
+    width: 64px; /* Resize the third image */
+    height: 30px;
+  }
+
+
+  
+  /* Responsive adjustments for Welcome.css */
+@media (max-width: 1024px) {
+  .content-wrapper {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  .text-content {
+    margin: 0;
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  .text-content h2 {
+    font-size: 2rem;
+    line-height: 1.2; /* Adjust heading size */
+  }
+
+  .cta-container {
+    flex-direction: column; /* Stack button and text */
+    gap: 10px; /* Reduce spacing */
+  }
+
+  .image-content {
+    width: 90%; /* Use percentage-based widths */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-section {
+    padding: 0 20px; /* Reduce padding for smaller screens */
+  }
+
+  .logo-container {
+    gap: 20px; /* Reduce spacing between logos */
+  }
+
+  .logo-container img {
+    width: 50px; /* Scale down logos */
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-content h2 {
+    font-size: 1.5rem; /* Smaller font for very small screens */
+  }
+
+  .cta-button {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,93 @@
+/* Assistant Section */
+.assistant-section {
+    font-family: Uber Move Text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 70PX;
+    width: 1440px;
+    height: 828px;
+    gap: 40px;
+  }
+  
+  .assistant-header {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: -100px;
+    gap: 8px;
+    width: 643px;
+    height: 93px;
+  }
+  
+  .assistant-header h3 {
+    font-size: 16px;
+    line-height: 71px;
+    font-weight: 400;
+    color: #287475; /* Matches your existing theme */
+    margin-bottom: 35px;
+    gap: 10px;
+    padding: 16px 16px;
+    height: 35px;
+  }
+  
+  .assistant-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000; /* Darker color for emphasis */
+    line-height: 50px;
+    text-align: center;
+    width: 643px;
+    height: 50px;
+  }
+  
+  .assistant-image {
+    width: 1330px;
+    height: 516px;
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+  
+  .assistant-image img {
+    width: 100%; /* Ensures the image spans the full width */
+    height: auto;
+    border-radius: 10px; /* Optional for a modern look */
+  }
+  
+  .assistant-description {
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    height: 72px;
+    gap: 24px;
+  }
+  
+  .assistant-description p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 400;
+  }
+  
+  .assistant-cta {
+    margin-top: 0px;
+  }
+  
+  .assistant-button {
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #339496;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    line-height: 27px;
+    width: 192px;
+    height: 47px;
+  }
+  
+  .assistant-button:hover {
+    background-color: #287475; /* Slightly darker for hover effect */
+  }
+  

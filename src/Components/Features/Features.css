@@ -1,0 +1,118 @@
+/* Features Section Wrapper */
+.features-section {
+    font-family: Uber Move Text;
+    padding: 3rem 1rem;
+    background-color: #FFFFFF;
+    margin: 2rem auto;
+    max-width: 90%;
+    text-align: center;
+  }
+  
+  /* Header Styling */
+  .features-header {
+    font-size: 16px;
+    font-weight: 400;
+    color: #287475;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    line-height: 71px;
+  }
+  
+  .features-subheader {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 49px;
+    font-weight: 500;
+    color: #2E2E2E;
+    margin-bottom: 1rem;
+    line-height: 61px;
+  }
+  
+  .features-subheader img {
+    position: absolute;
+    top: 8px;
+    left: -15px;
+    width: 310px;
+    height: auto;
+    opacity: 0.6;
+    z-index: 1;
+  }
+  
+  .features-description {
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  /* Features Content Wrapper */
+  .features-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 6rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+  }
+  
+  /* Left: Text Content */
+  .features-text {
+    flex: 1;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    text-align: left;
+  }
+  
+  .feature-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #339496;
+    color: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+  
+  .feature-text h3 {
+    font-size: 1.25rem;
+    color: #222;
+    margin: 0 0 0.8rem 0;
+    text-align: left;
+  }
+  
+  .feature-text p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  .feature-separator {
+    border-left: 2px solid #339496;
+    height: 4rem;
+    margin: 0rem 0 1rem 1.25rem;
+  }
+  
+  /* Right: Image Content */
+  .features-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .features-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  

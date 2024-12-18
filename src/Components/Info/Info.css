@@ -1,0 +1,72 @@
+/* Wrapper for the entire section */
+.info-section {
+    font-size: Uber Move Text;
+    padding: 2rem;
+    max-width: 90%;
+    margin: 1rem 6rem;
+    background-color: #287475; /*background color as needed */
+  }
+  
+  /* Flex container for the content */
+  .info-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    max-width: 1200px; /* Optional: limit the section's max width */
+    margin: 0 auto; /* Center the section horizontally */
+    gap: 16px; /* Adjust gap between text and image */
+  }
+  
+  /* Text content styling */
+  .info-text-content {
+    flex: 7; /* Takes 70% of the available space */
+    color: white;
+    text-align: left;
+  }
+  
+  .info-text-content h2 {
+    font-size: 39px;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+  }
+  
+  .info-text-content p {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #FFFFFF;
+    text-align: left;
+  }
+  
+  /* Image content styling */
+  .info-image-content {
+    flex: 3; /* Takes 30% of the available space */
+    text-align: right; /* Align image to the right */
+    align-items: center;
+    color: #A2A2A2;
+  }
+  
+  .info-image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: add rounded corners */
+  }
+
+  @media (max-width: 768px) {
+    .info-content-wrapper {
+      flex-direction: column;
+      text-align: center; /* Center align content on smaller screens */
+    }
+  
+    .info-text-content,
+    .info-image-content {
+      flex: 1; /* Both sections take equal space vertically */
+    }
+  }
+  
+  
+  
