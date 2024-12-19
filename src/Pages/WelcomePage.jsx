@@ -5,6 +5,7 @@ import Assistant from '../Components/Assistant/Assistant';
 import Info from '../Components/Info/Info';
 import Features from '../Components/Features/Features';
 import Community from '../Components/Community/Community';
+import Footer from '../Components/Footer/Footer';
 
 const WelcomePage = () => {
   return (
@@ -15,6 +16,7 @@ const WelcomePage = () => {
       <Info/>
       <Features/>
       <Community/>
+      <Footer/>
     </div>
   )
 }
