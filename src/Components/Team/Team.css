@@ -1,0 +1,77 @@
+/* Section Styling */
+.team {
+    font-family: Uber Move Text;
+    margin: auto;
+    width: 1440px;
+    height: 764px;
+    text-align: center;
+    padding: 70px;
+    gap: 80px;
+    background-color: #f9f9f9;
+  }
+  
+  .team-header {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 5%;
+    align-items: center;
+    text-align: center;
+    color: #287475;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  
+  .team-subheader {
+    font-size: 49px;
+    font-weight: 700;
+    color: #292929;
+    line-height: 61px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  /* Grid Styling */
+  .team-grid {
+    width: 740px;
+    height: 454px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 350px;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  /* Team Member Styling */
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-image {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: 4.97px solid #60B5B7;
+    object-fit: cover;
+    margin-bottom: 16px;
+  }
+  
+  .team-name {
+    font-size: 36px;
+    font-weight: 500;
+    color: #292929;
+    line-height: 45px;
+    text-align: center;
+  }
+  
+  .team-role {
+    width: 230px;
+    height: 27px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    font-size: 18px;
+    color: #666666;
+  }  

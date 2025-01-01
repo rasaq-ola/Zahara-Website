@@ -3,12 +3,13 @@
     display: flex;
     justify-content: space-between;
     padding: 14px 2rem;
-    height: 116px;
+    height: 81px;
     width: 1215px;
     background-color: #FFFFFF;
     gap: 402px;
     align-items: center;
-    margin: 0.5px auto;
+    margin: auto;
+    
 }
 .nav-logo{
     display: flex;
@@ -42,6 +43,7 @@
     line-height: 27px;
     font-family: Uber Move Text;
     color: #FFFFFF;
+    cursor: pointer;
 }
 .nav-menu{
     display: flex;

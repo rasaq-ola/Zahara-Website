@@ -1,12 +1,17 @@
 import React from 'react'
-import Welcome from '../Components/Welcome/Welcome'
-import Services from '../Components/Services/Services'
+import Opening from '../Components/Opening/Opening'
+import Navbar from '../Components/Navbar/Navbar';
+import WhatWeDo from '../Components/WhatWeDo/WhatWeDo';
+import Mission from '../Components/Mission/Mission';
+import Team from '../Components/Team/Team';
 
 const AboutUs = () => {
   return (
     <div>
-        <Welcome/>
-        
+      <Opening/>
+      <WhatWeDo/>
+      <Mission/>
+      <Team/>
     </div>
   )
 }

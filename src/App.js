@@ -1,27 +1,36 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
-import Navbar from './Components/Navbar/Navbar'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Welcome from './Components/Welcome/Welcome'
-import Services from './Components/Services/Services';
-import Assistant from './Components/Assistant/Assistant';
-import Info from './Components/Info/Info';
-import AboutUs from './Pages/AboutUs';
+import Navbar from './Components/Navbar/Navbar';
 import WelcomePage from './Pages/WelcomePage';
-
+import AboutUs from './Pages/AboutUs';
+import NoJobs from './Pages/NoJobs';
+import Footer from './Components/Footer/Footer';
 
 function App() {
+  // Custom wrapper component to access location
+  const Layout = ({ children }) => {
+    const location = useLocation();
+    const excludeFooterRoutes = ['/Pages/NoJobs'];
+
+    return (
+      <div className="App">
+        <Navbar />
+        {children}
+        {!excludeFooterRoutes.includes(location.pathname) && <Footer />}
+      </div>
+    );
+  };
+
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Navbar/>
-        
-      <Routes>
-        <Route path='/' element={<WelcomePage/>}/>
-        <Route path='/AboutUs' element={<AboutUs category="AboutUs" />} />
-      </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<WelcomePage />} />
+          <Route path="/AboutUs" target="_blank" element={<AboutUs category="AboutUs" />} />
+          <Route path="/Pages/NoJobs" element={<NoJobs />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 

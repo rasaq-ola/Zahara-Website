@@ -16,7 +16,6 @@ const WelcomePage = () => {
       <Info/>
       <Features/>
       <Community/>
-      <Footer/>
     </div>
   )
 }

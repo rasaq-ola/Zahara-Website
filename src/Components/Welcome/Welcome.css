@@ -1,6 +1,6 @@
 body {
     font-family: Uber Move Text;
-    margin: 0;
+    margin: 2rem;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -163,11 +163,12 @@ body {
   .content-wrapper {
     flex-direction: column; /* Stack elements vertically */
     align-items: center;
+    text-align: left;
   }
 
   .text-content {
     margin: 0;
-    text-align: center; /* Center text for smaller screens */
+    text-align: left; /* Center text for smaller screens */
   }
 
   .text-content h2 {
@@ -188,11 +189,16 @@ body {
 
 @media (max-width: 768px) {
   .welcome-section {
-    padding: 0 20px; /* Reduce padding for smaller screens */
+    width: 390opx;
+    height: 842px;
+    padding: 40px 16px; /* Reduce padding for smaller screens */
+    gap: 24px;
   }
 
   .logo-container {
     gap: 20px; /* Reduce spacing between logos */
+    width: 358px;
+    height: 762px;
   }
 
   .logo-container img {

@@ -190,6 +190,7 @@
   
   /* Footer Bottom */
   .footer-bottom {
+    width: 1330px;
     margin: -60px auto;
     border-top: 1px solid white;
     padding-top: 10px;
@@ -204,6 +205,15 @@
     font-weight: 400;
     size: 14px;
     line-height: 21px;
+  }
+
+  .footer-bottom p span {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    flex: 1;
+    line-height: 25px;
+    margin-top: -10px;
   }
 
   .footer-bottom h3{

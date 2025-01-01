@@ -56,8 +56,8 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="footer-bottom">
-        <h3>Zahara Health</h3>
-        <p>&copy; 2023 Zahara Health. All rights reserved.</p>
+        <p><span>Zahara Health</span>
+          &copy; 2023 Zahara Health. All rights reserved.</p>
         <ul>
           <li><a href="#privacy">Privacy Policy</a></li>
           <li><a href="#terms">Terms and conditions</a></li>

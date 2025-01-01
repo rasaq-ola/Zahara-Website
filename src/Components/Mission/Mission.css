@@ -1,0 +1,48 @@
+/* Section Styling */
+.mission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: #1F5A5B; /* Background color for the section */
+    width: 1440px;
+    height: 509px;
+    margin: 2rem auto;
+    gap: 80px;
+    border-radius: 8px;
+  }
+  
+  /* Image Styling */
+  .mission-image {
+    flex: 1;
+  }
+  
+  .target-image {
+    width: 555px;
+    height: 509px;
+    border-radius: 3px;
+  }
+  
+  /* Content Styling */
+  .mission-content {
+    width: 665px;
+    height: 390px;
+    flex: 1;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  .mission-title {
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  .mission-description {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 48px;
+  }  

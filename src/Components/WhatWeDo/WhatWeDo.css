@@ -1,0 +1,59 @@
+/* Section Wrapper */
+.what-we-do {
+  font-family: Uber Move Text;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 70px;
+    background-color: #ffffff;
+    width: 1441px;
+    height: 531px;
+    margin: 2rem auto;
+    gap: 24px;
+  }
+  
+  /* Image Styling */
+  .what-we-do-image {
+    flex: 1;
+  }
+  
+  .about-image {
+    width: 513px;
+    height: 451px;
+    border-radius: 10px;
+  }
+  
+  /* Content Styling */
+  .what-we-do-content {
+    flex: 1;
+    width: 716px;
+    height: 451px;
+    gap: 24px;
+    text-align: left;
+  }
+  
+  .section-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #287475;
+    line-height: 71px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  .about-description {
+    font-size: 20px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 30px;
+    margin-bottom: 1rem;
+  }
+  
