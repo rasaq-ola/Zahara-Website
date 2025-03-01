@@ -1,4 +1,6 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './Welcome.css'
 import welcomeicon from '../Assets/welcomeicon.png'
 import Homepage from '../Assets/Homepage.png'
@@ -7,7 +9,10 @@ import MED_AI from '../Assets/MED_AI.png'
 import smalllogo1 from '../Assets/smalllogo1.png'
 import logo from '../Assets/logo.png'
 
+
 const Welcome = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="welcome-section">
       <div className="content-wrapper">
@@ -21,11 +26,11 @@ const Welcome = () => {
             control of your wellbeing.
           </p>
           <div className="cta-container">
-            <button className="cta-button">Sign up for free</button>
+            <button className="cta-button"><Link style={{textDecoration: 'none', color: 'white'}} to='/Pages/WaitList' >Join Waitlist</Link></button>
             <span className="cta-text">Transforming health journey with MedAI</span>
           </div>
         </div>
-        <div className="image-content">
+      <div className="image-content">
           <img src={Homepage}/>
         </div>
       </div>

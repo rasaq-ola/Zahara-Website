@@ -1,0 +1,198 @@
+/* General Styles */
+.waitlist-container {
+  font-family: "Uber Move Text", sans-serif;
+  display: flex;
+  width: 1540px;
+  height: 832px;
+  background-color: #ebf6f6;
+  margin: -30px;
+ 
+}
+
+.waitlist-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.waitlist-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.waitlist-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  position: relative;
+  left: 30px;
+}
+
+/* Back Arrow */
+.back-arrow {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 40px;
+  font-size: 19px;
+  color: #1f1f1f;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.back-arrow:hover {
+  color: #287475;
+}
+
+
+.waitlist-logo {
+  position: absolute;
+  top: 44px;
+  right: 100px;
+  width: 44px;
+  height: auto;
+}
+
+.JH {
+  max-width: 560px;
+  text-align: left;
+}
+
+.waitlist-content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #1f1f1f;
+  margin-bottom: 16px;
+  margin-top: 80px;
+}
+
+.waitlist-content p {
+  font-size: 16px;
+  color: #1f1f1f;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+/* Waitlist Form */
+.waitlist-form {
+  max-width: 546px;
+  height: 425px;
+  top: 361.5px;
+  left: 818px;
+  background-color: #287475;
+  padding: 20px 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.waitlist-form label {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37.5px;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+.Name,
+.Mail {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0%;
+}
+
+.Name span,
+.Mail span{
+  color: #FF3333;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0%;
+}
+
+.waitlist-form input {
+  height: 50px;
+  width: 466px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-top: none;
+  outline: none;
+  color: white;
+}
+
+.waitlist-form input::placeholder {
+  color: #d0d0d0;
+}
+
+.waitlist-form button {
+  width: 486px;
+  height: 47px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #434343;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.waitlist-form button:hover {
+  background-color: #e0e0e0;
+}
+
+.waitlist-form button:focus {
+  background-color: #e0e0e0;
+}
+
+
+
+/* Error Styling */
+.error {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .waitlist-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .waitlist-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .waitlist-content {
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .waitlist-logo {
+    top: 10px;
+    right: 10px;
+    width: 40px;
+  }
+
+  .waitlist-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+}
+

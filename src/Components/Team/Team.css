@@ -34,7 +34,7 @@
   
   /* Grid Styling */
   .team-grid {
-    width: 740px;
+    width: 810px;
     height: 454px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -59,6 +59,7 @@
   }
   
   .team-name {
+    width: 280px;
     font-size: 36px;
     font-weight: 500;
     color: #292929;
@@ -67,7 +68,7 @@
   }
   
   .team-role {
-    width: 230px;
+    width: 300px;
     height: 27px;
     font-weight: 400;
     line-height: 27px;

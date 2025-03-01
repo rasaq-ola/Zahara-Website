@@ -6,19 +6,18 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: white;
+    background-color: #ffff;
   }
   
   .welcome-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1200px;
     width: 1440px;
     height: 691px;
-    margin: 0px auto;
-    background-color: white;
-    padding: 0px 70px;
+    margin: 30px auto;
+    background-color: #ffff;
+    padding: 0px;
     
   }
   
@@ -28,8 +27,9 @@ body {
     align-items: center;
     width: 1300px;
     height: 511px;
-    margin-bottom: 5px; /* Spacing between content and logo section */
+    margin-bottom: 0px; /* Spacing between content and logo section */
     gap: 40px;
+    background-color: #ffff;
   }
   
   .text-content {
@@ -47,7 +47,7 @@ body {
   }
   
   .text-content h2 {
-    font-size: 61px;
+    font-size: 57px;
     margin-bottom: 16px;
     font-weight: 700;
     line-height: 66px;
@@ -86,7 +86,7 @@ body {
   }
   
   .cta-button:hover {
-    background-color: #0056b3;
+    background-color: lightgreen;
   }
   
   .cta-text {
@@ -109,13 +109,15 @@ body {
     border-radius: 8px;
     width: 95%;
     height: 100%;
-    
   }
+
+
   
   /* Logo Section */
   .logo-section {
     text-align: center;
     width: 100%;
+    background-color: #ffff;
   }
   
   .logo-section h2 {
@@ -158,62 +160,73 @@ body {
 
 
   
-  /* Responsive adjustments for Welcome.css */
-@media (max-width: 1024px) {
+ /* Media query for tablets (screen width 768px and below) */
+@media screen and (max-width: 768px) {
+  .welcome-section {
+    width: 50%;
+    padding-left: 20px;
+    height: 100vh;
+  }
+
   .content-wrapper {
     flex-direction: column; /* Stack elements vertically */
-    align-items: center;
+    width: 50%;
+    gap: 20px;
     text-align: left;
   }
 
+  .image-content {
+    width: 100%; /* Full width for the image */
+    height: auto;
+    order: 2;
+  }
+
+  .image-content img {
+    width: 100%; /* Ensure the image is fully responsive */
+  }
+
   .text-content {
-    margin: 0;
-    text-align: left; /* Center text for smaller screens */
+    margin-right: 0; /* Remove horizontal margin */
+    text-align: left; /* left-align text for better visibility */
+    margin-bottom: 20px;
+  }
+
+  .text-content h1 {
+    font-size: 14px;
+    padding-left: 0; /* Remove padding */
   }
 
   .text-content h2 {
-    font-size: 2rem;
-    line-height: 1.2; /* Adjust heading size */
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .cta-container {
-    flex-direction: column; /* Stack button and text */
-    gap: 10px; /* Reduce spacing */
+    gap: 10px;
+    width:100%;
+    padding-left: 20px;
   }
 
-  .image-content {
-    width: 90%; /* Use percentage-based widths */
-    height: auto; /* Maintain aspect ratio */
+  .cta-button {
+    width: 50%; /* Full width for smaller screens */
   }
-}
-
-@media (max-width: 768px) {
-  .welcome-section {
-    width: 390opx;
-    height: 842px;
-    padding: 40px 16px; /* Reduce padding for smaller screens */
-    gap: 24px;
+  
+  .logo-section h2 {
+    font-size: 20px; /* Adjust font size */
   }
 
   .logo-container {
     gap: 20px; /* Reduce spacing between logos */
-    width: 358px;
-    height: 762px;
+    margin-top: 20px;
   }
 
   .logo-container img {
-    width: 50px; /* Scale down logos */
+    width: 50px; /* Adjust logo sizes */
     height: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .text-content h2 {
-    font-size: 1.5rem; /* Smaller font for very small screens */
-  }
-
-  .cta-button {
-    padding: 8px 20px;
-    font-size: 0.9rem;
   }
 }

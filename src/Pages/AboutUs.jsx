@@ -4,6 +4,7 @@ import Navbar from '../Components/Navbar/Navbar';
 import WhatWeDo from '../Components/WhatWeDo/WhatWeDo';
 import Mission from '../Components/Mission/Mission';
 import Team from '../Components/Team/Team';
+import Signin from './Signin';
 
 const AboutUs = () => {
   return (

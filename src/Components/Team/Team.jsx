@@ -24,7 +24,7 @@ const Team = () => {
         <div className="team-member">
           <img src={Member3} alt="Team Member 3" className="team-image" />
           <h4 className="team-name">Rasaq Ola</h4>
-          <p className="team-role">Developer | Frontend</p>
+          <p className="team-role">Developer | Frontend | Website developer</p>
         </div>
         <div className="team-member">
           <img src={Member4} alt="Team Member 4" className="team-image" />
